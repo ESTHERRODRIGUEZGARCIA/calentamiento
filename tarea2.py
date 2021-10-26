@@ -1,1 +1,3 @@
-print("Hello world")
+from colorama import init, Fore
+
+print(Fore.GREEN + "Hello world")
