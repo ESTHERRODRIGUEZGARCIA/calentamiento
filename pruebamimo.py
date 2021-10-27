@@ -1,4 +1,5 @@
-def greet():
-    day = "morning"
-    print(f"good {day}")
-greet()
+def greet(name):
+    print(f"hello, {name}")
+greet("april")
+greet("lucia")
+greet("esther")
