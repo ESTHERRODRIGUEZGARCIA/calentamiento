@@ -1,4 +1,4 @@
+import colorama
 from colorama import init, Fore
-init()
 
-print( Fore.GREEN + "Hello world")
+print( Fore.GREEN+"Hello world")
