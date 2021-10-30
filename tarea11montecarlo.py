@@ -15,5 +15,14 @@ def Monte_Carlo(grade):
 
         final_results.append(sum(results))
     return final_results
-a = Monte_Carlo([[4,9],[8.5,10],[3,7],[4,9][3,8],[7.5,8],[5,9],[0,6]])
-b = Monte_Carlo([[5,10], [4,4], [7,9], [2,]])
+a = Monte_Carlo([[4,9], [8.5,10], [5,9], [8.5,9.5],[3,7], [4,9], [3,8], [7.5,8], [5,9], [0,6]])
+b = Monte_Carlo([[5,10], [4,4], [7,9], [2,8], [6.9,5], [8.5,10], [8,10], [0,7], [3,9], [0,3]])
+c = Monte_Carlo([[4,7], [6,8], [6,9], [6.5,9], [2,6], [6.5,9], [5.5,9], [9.5,9.5], [5,9], [4,9]])
+
+fig = plt.figure(figsize=(10,6))
+sns.distplot(a)
+sns.distplot(b)
+sns.distplot(c)
+fig.legend(labels=["Job A", "Job B", "job C"])
+plt.title("MonteCarlo Distributions")
+plt.show()
